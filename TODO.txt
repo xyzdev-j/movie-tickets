@@ -1,0 +1,12 @@
+- [MOVIE] Property: name
+- [MOVIE] Property: genre
+- [MOVIE] Property: tickets available
+- [MOVIE] Property: tickets sold
+- [MOVIE] Property: rate
+- [MOVIE] Property: date
+
+- [USER] Property: first name
+- [USER] Property: last name
+- [USER] Property: movie
+- [USER] Property: tickets
+- [USER] Property: date
