@@ -28,10 +28,12 @@ public class Ticket {
         {
             availableTickets -= number;
             System.out.println("Bought " + number + " tickets for " + movieName + ".");
+            System.out.println();
             return true;
         }
         else {
             System.out.println("Not enough tickets available.");
+            System.out.println();
             return false;
         }
     }
