@@ -18,4 +18,24 @@ public class Movie {
         this.date = date;
         this.ticketsAvailable = totalTickets;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public float getRate() {
+        return rate;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public int getTicketsAvailable() {
+        return ticketsAvailable;
+    }
 }
