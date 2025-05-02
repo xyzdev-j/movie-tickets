@@ -4,21 +4,18 @@ public class Movie {
     float rate;
     String genre;
     String date;
-    int tickets_available;
-    int tickets_sold;
+    int ticketsAvailable;
 
     public Movie(String name,
                  float rate,
                  String genre,
                  String date,
-                 int tickets_available,
-                 int tickets_sold)
+                 int totalTickets)
     {
         this.name = name;
         this.rate = rate;
         this.genre = genre;
         this.date = date;
-        this.tickets_available = tickets_available;
-        this.tickets_sold = tickets_sold;
+        this.ticketsAvailable = totalTickets;
     }
 }
