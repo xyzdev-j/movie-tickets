@@ -18,8 +18,21 @@ public class Ticket {
         return movieName;
     }
 
-    public String buyTicket(String name, int number)
-    {
+    public float getTicketPrice() {
+        return ticketPrice;
+    }
 
+    public boolean buyTicket(int number)
+    {
+        if (number <= availableTickets)
+        {
+            availableTickets -= number;
+            System.out.println("Bought " + number + " tickets for " + movieName + ".");
+            return true;
+        }
+        else {
+            System.out.println("Not enough tickets available.");
+            return false;
+        }
     }
 }
