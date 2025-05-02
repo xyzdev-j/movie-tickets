@@ -42,6 +42,7 @@ public class Main {
                             int n1 = scn.nextInt();
                             scn.nextLine();
                             braveHeartTickets.buyTicket(n1);
+                            running = false;
                             break;
 
                         case "Forrest Gump":
@@ -50,6 +51,7 @@ public class Main {
                             int n2 = scn.nextInt();
                             scn.nextLine();
                             forrestGumpTickets.buyTicket(n2);
+                            running = false;
                             break;
 
                         case "12 Angry Men":
@@ -58,6 +60,7 @@ public class Main {
                             int n3 = scn.nextInt();
                             scn.nextLine();
                             twelveAngryMenTickets.buyTicket(n3);
+                            running = false;
                             break;
 
                         default:
