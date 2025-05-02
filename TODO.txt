@@ -1,5 +1,0 @@
-- [USER] Property: first name
-- [USER] Property: last name
-- [USER] Property: movie
-- [USER] Property: tickets
-- [USER] Property: date
