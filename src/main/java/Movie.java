@@ -1,47 +1,39 @@
-import java.util.ArrayList;
-
 public class Movie {
 
-    String name;
-    float rate;
-    String genre;
-    String date;
-    static ArrayList<String> movies = new ArrayList<String>(3);
+    private static int lastUsedID = 320004;
 
-    public Movie(String name,
-                 float rate,
-                 String genre,
-                 String date)
-    {
-        this.name = name;
-        this.rate = rate;
-        this.genre = genre;
-        this.date = date;
-        movies.add(name);
+    private final int movieID;
+    private String movieName;
+    private float movieRate;
+    private String movieGenre;
+    private String movieDate;
+
+    public Movie(String name, float rate, String genre, String date) {
+        lastUsedID += 1;
+        this.movieID = lastUsedID;
+        this.movieName = name;
+        this.movieRate = rate;
+        this.movieGenre = genre;
+        this.movieDate = date;
     }
 
-    public String getName() {
-        return name;
+    public int getMovieID() {
+        return movieID;
     }
 
-    public float getRate() {
-        return rate;
+    public String getMovieName() {
+        return movieName;
     }
 
-    public String getGenre() {
-        return genre;
+    public float getMovieRate() {
+        return movieRate;
     }
 
-    public String getDate() {
-        return date;
+    public String getMovieGenre() {
+        return movieGenre;
     }
 
-    public static void listOfMovies()
-    {
-        System.out.println("List of movies available: ");
-        for(String s : movies)
-        {
-            System.out.println(s);
-        }
+    public String getMovieDate() {
+        return movieDate;
     }
 }
