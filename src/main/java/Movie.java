@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,6 +19,7 @@ public class Movie {
     }
 
     public static void getAllMovies() {
+        System.out.println("List of movies: Name, Rate, Genre, Play");
         for (Integer i: movies.keySet()) {
             System.out.println(movies.get(i));
         }
