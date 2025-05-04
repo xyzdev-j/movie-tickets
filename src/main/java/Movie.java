@@ -7,8 +7,8 @@ public class Movie {
     static Map<Integer, String> movies = new HashMap<>();
 
     public static void add(String name, float rate, String genre, String date) {
-        lastUsedID += 1;
-        movies.put(lastUsedID,
+
+        movies.put(generateNewID(),
                 name +
                 ", " +
                 rate +
@@ -16,6 +16,11 @@ public class Movie {
                 genre +
                 ", " +
                 date);
+    }
+
+    private static int generateNewID() {
+        lastUsedID += 1;
+        return lastUsedID;
     }
 
     public static void getAllMovies() {
